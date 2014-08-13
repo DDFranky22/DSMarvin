@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{54449D4B-8BB9-6894-E818-AF369ED15967}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Prefab\SecretPrefab\HandleAnimationCharTest.cs" />
+     <Compile Include="Assets\Prefab\SecretPrefab\RotateCharachter.cs" />
+     <Compile Include="Assets\Script\AnimationManager.cs" />
+     <Compile Include="Assets\Script\AnimationManagerNPC.cs" />
+     <Compile Include="Assets\Script\CameraControl.cs" />
+     <Compile Include="Assets\Script\CameraSizeAdapting.cs" />
+     <Compile Include="Assets\Script\ChangeMusicVolume.cs" />
+     <Compile Include="Assets\Script\ChangeNumberNPC.cs" />
+     <Compile Include="Assets\Script\ChangePlayerNumber.cs" />
+     <Compile Include="Assets\Script\ChangePlayerNumberText.cs" />
+     <Compile Include="Assets\Script\ChangeRoundNumber.cs" />
+     <Compile Include="Assets\Script\ChangeRoundNumberText.cs" />
+     <Compile Include="Assets\Script\ChangeSFXVolume.cs" />
+     <Compile Include="Assets\Script\ChangeTeamSettings.cs" />
+     <Compile Include="Assets\Script\ChangeTeamText.cs" />
+     <Compile Include="Assets\Script\CheckingStatePlayer.cs" />
+     <Compile Include="Assets\Script\CheckingVictory.cs" />
+     <Compile Include="Assets\Script\ClickOnButton.cs" />
+     <Compile Include="Assets\Script\ClicktoRemoveNPC.cs" />
+     <Compile Include="Assets\Script\ControllerMenuManager.cs" />
+     <Compile Include="Assets\Script\CreateNPC.cs" />
+     <Compile Include="Assets\Script\CreatePlayerInLobby.cs" />
+     <Compile Include="Assets\Script\DestroyUselessGameObject.cs" />
+     <Compile Include="Assets\Script\DontDestroyUntill.cs" />
+     <Compile Include="Assets\Script\GUICreationServer.cs" />
+     <Compile Include="Assets\Script\HandleMusicOptions.cs" />
+     <Compile Include="Assets\Script\HandleNPCSettings.cs" />
+     <Compile Include="Assets\Script\HandleSFXOptions.cs" />
+     <Compile Include="Assets\Script\InstantiateGUIScore.cs" />
+     <Compile Include="Assets\Script\InstantiatePlayers.cs" />
+     <Compile Include="Assets\Script\LMPlaceScoreInLobby.cs" />
+     <Compile Include="Assets\Script\LobbyManager.cs" />
+     <Compile Include="Assets\Script\LookAtCamera.cs" />
+     <Compile Include="Assets\Script\OCheckModePlayer.cs" />
+     <Compile Include="Assets\Script\OCheckNpcNumber.cs" />
+     <Compile Include="Assets\Script\OGameCreationMenu.cs" />
+     <Compile Include="Assets\Script\OptionsBehaviour.cs" />
+     <Compile Include="Assets\Script\OptionsMenu.cs" />
+     <Compile Include="Assets\Script\PauseMenuBehaviour.cs" />
+     <Compile Include="Assets\Script\PlayerInLobbyBehaviour.cs" />
+     <Compile Include="Assets\Script\PlayerInLobbyMovement.cs" />
+     <Compile Include="Assets\Script\RagdollDeath.cs" />
+     <Compile Include="Assets\Script\Ready.cs" />
+     <Compile Include="Assets\Script\RefreshNumberOfNPC.cs" />
+     <Compile Include="Assets\Script\ReloadBarAction.cs" />
+     <Compile Include="Assets\Script\Script3D\AnimationManagerNPC3D.cs" />
+     <Compile Include="Assets\Script\Script3D\AnimationManagerPlayer3D.cs" />
+     <Compile Include="Assets\Script\Script3D\NPCBehaviour.cs" />
+     <Compile Include="Assets\Script\Script3D\PlayerMovement3D.cs" />
+     <Compile Include="Assets\Script\Script3D\ScriptForMenu\NPCBehaviourMenu.cs" />
+     <Compile Include="Assets\Script\ScriptForLocalMultiplayer\Countdown.cs" />
+     <Compile Include="Assets\Script\ScriptForLocalMultiplayer\LMCheckingVictory.cs" />
+     <Compile Include="Assets\Script\ScriptForLocalMultiplayer\LMCreatePlayerInLobby.cs" />
+     <Compile Include="Assets\Script\ScriptForLocalMultiplayer\LMCreatePlayers.cs" />
+     <Compile Include="Assets\Script\ScriptForLocalMultiplayer\LMGUIVictory.cs" />
+     <Compile Include="Assets\Script\ScriptForLocalMultiplayer\LMGameSettings.cs" />
+     <Compile Include="Assets\Script\ScriptForLocalMultiplayer\LMLobbyManager.cs" />
+     <Compile Include="Assets\Script\ScriptForLocalMultiplayer\LMNPCBehaviour.cs" />
+     <Compile Include="Assets\Script\ScriptForLocalMultiplayer\LMPlayerMovement.cs" />
+     <Compile Include="Assets\Script\ScriptForLocalMultiplayer\LMPlayerMovementLobby.cs" />
+     <Compile Include="Assets\Script\ScriptForLocalMultiplayer\LMReady.cs" />
+     <Compile Include="Assets\Script\ScriptForLocalMultiplayer\LocalMultiplayerNPCCreation.cs" />
+     <Compile Include="Assets\Script\ScriptForNetworking\ConnectServerGUI.cs" />
+     <Compile Include="Assets\Script\ScriptForNetworking\CreateThePlayers.cs" />
+     <Compile Include="Assets\Script\ScriptForNetworking\NetworkManager.cs" />
+     <Compile Include="Assets\Script\ScriptForNetworking\Player.cs" />
+     <Compile Include="Assets\Script\ScriptForNetworking\RefreshServerListGUI.cs" />
+     <Compile Include="Assets\Script\SpawnOwnBar.cs" />
+     <Compile Include="Assets\Script\SpawnOwnBarOnline.cs" />
+     <Compile Include="Assets\Script\StayInPosition.cs" />
+     <Compile Include="Assets\Script\TryToRegisterMe.cs" />
+     <Compile Include="Assets\Script\WinLoseScriptManager.cs" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\ModelForMenu\Materials\NewToonyShader.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

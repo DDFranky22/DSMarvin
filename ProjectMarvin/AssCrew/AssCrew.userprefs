@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\HandleSFXOptions.cs">
+    <Files>
+      <File FileName="Assets\OptionsBehaviour.cs" Line="6" Column="8" />
+      <File FileName="Assets\PauseMenuBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\ClickOnButton.cs" Line="62" Column="63" />
+      <File FileName="Assets\HandleMusicOptions.cs" Line="20" Column="43" />
+      <File FileName="Assets\ChangeMusicVolume.cs" Line="30" Column="6" />
+      <File FileName="Assets\ControllerMenuManager.cs" Line="63" Column="8" />
+      <File FileName="Assets\HandleSFXOptions.cs" Line="27" Column="24" />
+      <File FileName="Assets\ChangeSFXVolume.cs" Line="4" Column="23" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
