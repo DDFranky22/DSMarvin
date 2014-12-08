@@ -5,12 +5,19 @@ public class ChangePlayerNumber : MonoBehaviour {
 
 	public LMGameSettings settings;
 	public GUIText scriptText;
-
+	public ClickOnButton option;
+	private int MaxPlayers;
 	public bool add;
 
 	// Use this for initialization
 	void Start () {
 		scriptText = GetComponent<GUIText> ();
+		if(Input.GetJoystickNames().Length>=2){
+			MaxPlayers = Input.GetJoystickNames().Length;
+		}
+		else{
+			MaxPlayers = 2;
+		}
 	}
 	
 	// Update is called once per frame
@@ -18,19 +25,20 @@ public class ChangePlayerNumber : MonoBehaviour {
 	}
 
 	public void Selected(){
-		scriptText.color = Color.grey;
-		scriptText.fontStyle = FontStyle.Italic;
+		scriptText.color = Color.black;
+		scriptText.fontStyle = FontStyle.Normal;
 	}
 	
 	public void Deselected(){
-		scriptText.color = Color.black;
-		scriptText.fontStyle = FontStyle.Normal;
+		scriptText.color = Color.grey;
+		scriptText.fontStyle = FontStyle.Italic;
+
 	}
 	
 	public void Chose(){
 		int p = settings.GetPlayers ();
 		if (add) {
-			if (p < 4) {
+			if (p < MaxPlayers) {
 				settings.SetPlayers (p + 1);
 			}
 		} 
@@ -43,10 +51,12 @@ public class ChangePlayerNumber : MonoBehaviour {
 	
 	void OnMouseOver(){
 		Selected();
+		option.Selected();
 	}
 	
 	void OnMouseExit(){
 		Deselected();
+		option.Deselect();
 	}
 	
 	void OnMouseDown(){

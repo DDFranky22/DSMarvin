@@ -6,7 +6,7 @@ InputManager:
   m_Axes:
   - serializedVersion: 3
     m_Name: Horizontal
-    descriptiveName: 
+    descriptiveName: P1 Horizontal Movement (keyboard)
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -22,7 +22,7 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Horizontal_2
-    descriptiveName: 
+    descriptiveName: P2 Horizontal Movement (keyboard)
     descriptiveNegativeName: 
     negativeButton: j
     positiveButton: l
@@ -38,7 +38,7 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Vertical
-    descriptiveName: 
+    descriptiveName: P1 Vertical Movement (keyboard)
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -54,7 +54,7 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Vertical_2
-    descriptiveName: 
+    descriptiveName: P2 Vertical Movement (keyboard)
     descriptiveNegativeName: 
     negativeButton: k
     positiveButton: i
@@ -182,7 +182,7 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Horizontal
-    descriptiveName: 
+    descriptiveName: P1 Horizontal Movement
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -198,7 +198,7 @@ InputManager:
     joyNum: 1
   - serializedVersion: 3
     m_Name: Vertical
-    descriptiveName: 
+    descriptiveName: P1 Vertical Movement
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -214,7 +214,7 @@ InputManager:
     joyNum: 1
   - serializedVersion: 3
     m_Name: RT_1
-    descriptiveName: 
+    descriptiveName: P1 Run
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -230,7 +230,7 @@ InputManager:
     joyNum: 1
   - serializedVersion: 3
     m_Name: RT_1
-    descriptiveName: 
+    descriptiveName: P1 Run (keyboard)
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: left shift
@@ -246,7 +246,7 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: X_1
-    descriptiveName: 
+    descriptiveName: P1 Attack
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick 1 button 2
@@ -262,7 +262,7 @@ InputManager:
     joyNum: 1
   - serializedVersion: 3
     m_Name: X_1
-    descriptiveName: 
+    descriptiveName: P1 Attack (keyboard)
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: f
@@ -278,7 +278,7 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: B_1
-    descriptiveName: 
+    descriptiveName: P1 Wave
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick 1 button 1
@@ -294,7 +294,7 @@ InputManager:
     joyNum: 1
   - serializedVersion: 3
     m_Name: B_1
-    descriptiveName: 
+    descriptiveName: P1 Wave (keyboard)
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: q
@@ -310,10 +310,10 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Start_1
-    descriptiveName: 
+    descriptiveName: P1 Pause
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: 
+    positiveButton: joystick 1 button 7
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1
@@ -326,7 +326,7 @@ InputManager:
     joyNum: 1
   - serializedVersion: 3
     m_Name: Start_1
-    descriptiveName: 
+    descriptiveName: P1 Pause (keyboard)
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: escape
@@ -390,7 +390,7 @@ InputManager:
     joyNum: 1
   - serializedVersion: 3
     m_Name: Horizontal_2
-    descriptiveName: 
+    descriptiveName: P2 Horizontal Movement
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -406,7 +406,7 @@ InputManager:
     joyNum: 2
   - serializedVersion: 3
     m_Name: Vertical_2
-    descriptiveName: 
+    descriptiveName: P2 Verticall Movement
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -422,7 +422,7 @@ InputManager:
     joyNum: 2
   - serializedVersion: 3
     m_Name: X_2
-    descriptiveName: 
+    descriptiveName: P2 Attack
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick 2 button 2
@@ -438,7 +438,7 @@ InputManager:
     joyNum: 2
   - serializedVersion: 3
     m_Name: X_2
-    descriptiveName: 
+    descriptiveName: P2 Attack (keyboard)
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: h
@@ -454,7 +454,7 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: B_2
-    descriptiveName: 
+    descriptiveName: P2 Wave
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick 2 button 1
@@ -470,7 +470,7 @@ InputManager:
     joyNum: 2
   - serializedVersion: 3
     m_Name: B_2
-    descriptiveName: 
+    descriptiveName: P2 Wave (keyboard)
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: o
@@ -486,7 +486,7 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: RT_2
-    descriptiveName: 
+    descriptiveName: P2 Run
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -502,7 +502,7 @@ InputManager:
     joyNum: 2
   - serializedVersion: 3
     m_Name: RT_2
-    descriptiveName: 
+    descriptiveName: P2 Run (keyboard)
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: right shift
@@ -518,7 +518,7 @@ InputManager:
     joyNum: 2
   - serializedVersion: 3
     m_Name: Start_2
-    descriptiveName: 
+    descriptiveName: P2 Pause
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick 2 button 7
@@ -534,7 +534,7 @@ InputManager:
     joyNum: 11
   - serializedVersion: 3
     m_Name: Start_2
-    descriptiveName: 
+    descriptiveName: P2 Pause (keyboard)
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: escape
@@ -550,7 +550,7 @@ InputManager:
     joyNum: 1
   - serializedVersion: 3
     m_Name: Horizontal_3
-    descriptiveName: 
+    descriptiveName: P3 Horizontal Movement
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -566,7 +566,7 @@ InputManager:
     joyNum: 3
   - serializedVersion: 3
     m_Name: Vertical_3
-    descriptiveName: 
+    descriptiveName: P3 Vertical Movement
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -582,7 +582,7 @@ InputManager:
     joyNum: 3
   - serializedVersion: 3
     m_Name: X_3
-    descriptiveName: 
+    descriptiveName: P3 Attack
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick 3 button 2
@@ -598,7 +598,7 @@ InputManager:
     joyNum: 3
   - serializedVersion: 3
     m_Name: B_3
-    descriptiveName: 
+    descriptiveName: P3 Wave
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick 3 button 1
@@ -614,7 +614,7 @@ InputManager:
     joyNum: 3
   - serializedVersion: 3
     m_Name: RT_3
-    descriptiveName: 
+    descriptiveName: P3 Run
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -630,7 +630,7 @@ InputManager:
     joyNum: 3
   - serializedVersion: 3
     m_Name: Start_3
-    descriptiveName: 
+    descriptiveName: P3 Pause
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick 3 button 7
@@ -646,7 +646,7 @@ InputManager:
     joyNum: 3
   - serializedVersion: 3
     m_Name: Horizontal_4
-    descriptiveName: 
+    descriptiveName: P4 Horizontal Movement
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -662,7 +662,7 @@ InputManager:
     joyNum: 4
   - serializedVersion: 3
     m_Name: Vertical_4
-    descriptiveName: 
+    descriptiveName: P4 Vertical Movement
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -672,13 +672,13 @@ InputManager:
     dead: .189999998
     sensitivity: 1
     snap: 0
-    invert: 0
+    invert: 1
     type: 2
     axis: 1
     joyNum: 4
   - serializedVersion: 3
     m_Name: X_4
-    descriptiveName: 
+    descriptiveName: P4 Attack
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick 4 button 2
@@ -693,8 +693,8 @@ InputManager:
     axis: 1
     joyNum: 4
   - serializedVersion: 3
-    m_Name: X_4
-    descriptiveName: 
+    m_Name: B_4
+    descriptiveName: P4 Wave
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick 4 button 1
@@ -710,7 +710,7 @@ InputManager:
     joyNum: 4
   - serializedVersion: 3
     m_Name: RT_4
-    descriptiveName: 
+    descriptiveName: P4 Run
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -725,8 +725,8 @@ InputManager:
     axis: 2
     joyNum: 4
   - serializedVersion: 3
-    m_Name: RT_4
-    descriptiveName: 
+    m_Name: Start_4
+    descriptiveName: P4 Pause
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick 4 button 7

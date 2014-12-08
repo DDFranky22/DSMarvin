@@ -115,7 +115,7 @@ public class LMPlayerMovementLobby : MonoBehaviour {
 			}
 			break;
 		case 1: 
-			if(Input.GetKeyDown(KeyCode.Escape)||Input.GetKeyDown(KeyCode.Joystick2Button1)){
+			if(Input.GetKeyDown(KeyCode.Escape)||Input.GetKeyDown(KeyCode.Joystick2Button7)){
 				PressedPause = !PressedPause;
 				if(!Pause){
 					PauseGame(Number);

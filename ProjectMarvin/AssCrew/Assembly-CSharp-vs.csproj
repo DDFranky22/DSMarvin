@@ -46,6 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CheckWichTextIsActive.cs" />
+     <Compile Include="Assets\InformationText.cs" />
+     <Compile Include="Assets\LoadMainMenu.cs" />
      <Compile Include="Assets\Prefab\SecretPrefab\HandleAnimationCharTest.cs" />
      <Compile Include="Assets\Prefab\SecretPrefab\RotateCharachter.cs" />
      <Compile Include="Assets\Script\AnimationManager.cs" />
@@ -59,6 +62,7 @@
      <Compile Include="Assets\Script\ChangeRoundNumber.cs" />
      <Compile Include="Assets\Script\ChangeRoundNumberText.cs" />
      <Compile Include="Assets\Script\ChangeSFXVolume.cs" />
+     <Compile Include="Assets\Script\ChangeSpriteWithController.cs" />
      <Compile Include="Assets\Script\ChangeTeamSettings.cs" />
      <Compile Include="Assets\Script\ChangeTeamText.cs" />
      <Compile Include="Assets\Script\CheckingStatePlayer.cs" />
@@ -74,6 +78,7 @@
      <Compile Include="Assets\Script\HandleMusicOptions.cs" />
      <Compile Include="Assets\Script\HandleNPCSettings.cs" />
      <Compile Include="Assets\Script\HandleSFXOptions.cs" />
+     <Compile Include="Assets\Script\InstantiateCrowd.cs" />
      <Compile Include="Assets\Script\InstantiateGUIScore.cs" />
      <Compile Include="Assets\Script\InstantiatePlayers.cs" />
      <Compile Include="Assets\Script\LMPlaceScoreInLobby.cs" />
@@ -116,8 +121,10 @@
      <Compile Include="Assets\Script\SpawnOwnBar.cs" />
      <Compile Include="Assets\Script\SpawnOwnBarOnline.cs" />
      <Compile Include="Assets\Script\StayInPosition.cs" />
+     <Compile Include="Assets\Script\TextChangeWithController.cs" />
      <Compile Include="Assets\Script\TryToRegisterMe.cs" />
      <Compile Include="Assets\Script\WinLoseScriptManager.cs" />
+     <Compile Include="Assets\ShowAt.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\ModelForMenu\Materials\NewToonyShader.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />

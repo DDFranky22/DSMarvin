@@ -6,6 +6,7 @@ public class ChangeRoundNumber : MonoBehaviour {
 	public LMGameSettings settings;
 
 	public GUIText scriptText;
+	public ClickOnButton option;
 	
 	public bool add;
 
@@ -18,25 +19,25 @@ public class ChangeRoundNumber : MonoBehaviour {
 	}
 
 	public void Selected(){
-		scriptText.color = Color.grey;
-		scriptText.fontStyle = FontStyle.Italic;
+		scriptText.color = Color.black;
+		scriptText.fontStyle = FontStyle.Normal;
 	}
 	
 	public void Deselected(){
-		scriptText.color = Color.black;
-		scriptText.fontStyle = FontStyle.Normal;
+		scriptText.color = Color.grey;
+		scriptText.fontStyle = FontStyle.Italic;
 	}
 	
 	public void Chose(){
 		int r = settings.GetRealRound ();
 		if (add) {
-			if (r < 7) {
-				settings.SetRound (r+2);
+			if (r < 4) {
+				settings.SetRound (r+1);
 			}
 		} 
 		else {
 			if(r>1){
-				settings.SetRound (r -2);
+				settings.SetRound (r-1);
 			}
 		}
 	}
@@ -44,10 +45,12 @@ public class ChangeRoundNumber : MonoBehaviour {
 	
 	void OnMouseOver(){
 		Selected();
+		option.Selected();
 	}
 	
 	void OnMouseExit(){
 		Deselected();
+		option.Deselect();
 	}
 	
 	void OnMouseDown(){

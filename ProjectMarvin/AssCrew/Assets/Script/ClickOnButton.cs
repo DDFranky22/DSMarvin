@@ -6,6 +6,7 @@ public class ClickOnButton : MonoBehaviour {
 	public string Scene;
 	public GUIText scriptText;
 	public bool Quit;
+	public bool sel = false;
 
 	// Use this for initialization
 	void Start () {
@@ -18,13 +19,15 @@ public class ClickOnButton : MonoBehaviour {
 	}
 
 	public void Selected(){
-		scriptText.color = Color.grey;
-		scriptText.fontStyle = FontStyle.Italic;
+		sel = true;
+		scriptText.color = Color.black;
+		scriptText.fontStyle = FontStyle.Normal;
 	}
 
 	public void Deselect(){
-		scriptText.color = Color.black;
-		scriptText.fontStyle = FontStyle.Normal;
+		sel = false;
+		scriptText.color = Color.grey;
+		scriptText.fontStyle = FontStyle.Italic;
 	}
 
 	public void Chose(){

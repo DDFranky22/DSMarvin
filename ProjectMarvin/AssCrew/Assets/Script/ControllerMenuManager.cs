@@ -40,7 +40,7 @@ public class ControllerMenuManager : MonoBehaviour {
 				Down = false;
 				Up = true;
 			}
-			if(Input.GetAxis("Vertical")==0){
+			if(Input.GetAxis("Vertical")<=0.5f&&Input.GetAxis("Vertical")>=-0.5f){
 				Down = false;
 				Up = false;
 			}
@@ -60,7 +60,7 @@ public class ControllerMenuManager : MonoBehaviour {
 				SelectedButton(i);
 				DeselectOther(i);
 			}
-			if((Input.GetAxis("Horizontal")<-0.5f || Input.GetAxis("Horizontal")>0.5f)&&!horizontalMove){
+			if((Input.GetAxis("Horizontal")<=-0.5f || Input.GetAxis("Horizontal")>=0.5f)&&!horizontalMove){
 				DoStuff(Input.GetAxis("Horizontal"));
 				horizontalMove=true;
 			}

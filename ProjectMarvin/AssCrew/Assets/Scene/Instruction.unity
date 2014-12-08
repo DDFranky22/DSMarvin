@@ -6142,6 +6142,7 @@ MonoBehaviour:
   Scene: ScenaCreazione
   scriptText: {fileID: 0}
   Quit: 0
+  sel: 0
 --- !u!132 &462293695
 GUIText:
   m_ObjectHideFlags: 0
@@ -8351,6 +8352,7 @@ GameObject:
   - 132: {fileID: 677227787}
   - 114: {fileID: 677227786}
   - 114: {fileID: 677227785}
+  - 114: {fileID: 677227789}
   m_Layer: 0
   m_Name: Back
   m_TagString: Untagged
@@ -8384,6 +8386,7 @@ MonoBehaviour:
   Scene: MenuTest
   scriptText: {fileID: 0}
   Quit: 0
+  sel: 0
 --- !u!132 &677227787
 GUIText:
   m_ObjectHideFlags: 0
@@ -8401,10 +8404,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 19
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4287795858
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &677227788
@@ -8419,6 +8422,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootMapOrder: 0
+--- !u!114 &677227789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 677227784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e527b7e28c67754a848cf21fb566979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NormalText: Back
+  ControllerText: Press B to go Back
 --- !u!1 &678701907
 GameObject:
   m_ObjectHideFlags: 0
@@ -11767,6 +11783,7 @@ MonoBehaviour:
   Scene: 
   scriptText: {fileID: 0}
   Quit: 1
+  sel: 0
 --- !u!1 &895106137
 GameObject:
   m_ObjectHideFlags: 0
@@ -12067,8 +12084,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 935280599}
   - 131: {fileID: 935280598}
+  - 114: {fileID: 935280600}
   m_Layer: 0
-  m_Name: UnityWatermark-small
+  m_Name: ControllerInputMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12105,6 +12123,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootMapOrder: 23
+--- !u!114 &935280600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 935280597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6324d2cba78d842bac1b6b95f53baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img:
+  - {fileID: 2800000, guid: aad2d8823e812de4ca414e850bf8e9a5, type: 3}
+  - {fileID: 2800000, guid: f1451c2d158d6664f9dab179eb9e5905, type: 3}
 --- !u!1 &938162143
 GameObject:
   m_ObjectHideFlags: 0
@@ -16343,6 +16375,7 @@ MonoBehaviour:
   Scene: ScenaCreazione
   scriptText: {fileID: 0}
   Quit: 0
+  sel: 0
 --- !u!1 &1270872323
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class LMGameSettings : MonoBehaviour {
 
@@ -8,9 +9,9 @@ public class LMGameSettings : MonoBehaviour {
 	public int NPC;
 	public int RoundToEnd;
 	public int CurrentRound;
-	public int[] RoundWinner;
+	public List<int>RoundWinner;
 	public bool Team;
-
+	public int gameMode;
 
 	void Update(){
 		DontDestroyOnLoad(this.gameObject);
@@ -28,7 +29,7 @@ public class LMGameSettings : MonoBehaviour {
 	public void SetRound(int x){
 		Round = x;
 		RoundToEnd = Round+1;
-		RoundWinner = new int[Round];
+		RoundWinner = new List<int>();
 	}
 	
 	public int GetRound(){
@@ -52,7 +53,8 @@ public class LMGameSettings : MonoBehaviour {
 	}
 
 	public void SetRoundWinner(int round, int winner){
-		RoundWinner[round] = winner;
+		//RoundWinner[round] = winner;
+		RoundWinner.Add(winner);
 	}
 
 	public int GetRoundWinner(int i){
@@ -77,12 +79,20 @@ public class LMGameSettings : MonoBehaviour {
 
 	public int GivePlayerWin(int x){
 		int round = 0;
-		for(int i = 0;i<RoundWinner.Length;i++){
+		for(int i = 0;i<RoundWinner.Count;i++){
 			if(RoundWinner[i]==x){
 				round++;
 			}
 		}
 		return round;
+	}
+
+	public int GetGameMode(){
+		return gameMode;
+	}
+
+	public void SetGameMode(int x){
+		gameMode = x;
 	}
 
 }

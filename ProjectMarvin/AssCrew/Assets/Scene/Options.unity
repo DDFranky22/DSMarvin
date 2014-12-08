@@ -181,6 +181,7 @@ MonoBehaviour:
   Scene: 
   scriptText: {fileID: 0}
   Quit: 0
+  sel: 0
 --- !u!114 &369476900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,6 +445,7 @@ GameObject:
   - 4: {fileID: 894575987}
   - 132: {fileID: 894575986}
   - 114: {fileID: 894575988}
+  - 114: {fileID: 894575989}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -500,6 +502,20 @@ MonoBehaviour:
   Scene: MenuTest
   scriptText: {fileID: 0}
   Quit: 0
+  sel: 0
+--- !u!114 &894575989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894575985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e527b7e28c67754a848cf21fb566979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NormalText: Back
+  ControllerText: Press B to Main Menu
 --- !u!1 &1018330705
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,6 +744,7 @@ MonoBehaviour:
   Scene: 
   scriptText: {fileID: 0}
   Quit: 0
+  sel: 0
 --- !u!132 &2103070211
 GUIText:
   m_ObjectHideFlags: 0

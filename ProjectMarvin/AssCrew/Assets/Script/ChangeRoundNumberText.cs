@@ -37,6 +37,6 @@ public class ChangeRoundNumberText : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		scriptText.text = "Rounds : " + settings.GetRealRound ();
+		scriptText.text = "First to : " + settings.GetRealRound ();
 	}
 }

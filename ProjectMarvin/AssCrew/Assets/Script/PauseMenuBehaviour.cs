@@ -37,7 +37,8 @@ public class PauseMenuBehaviour : MonoBehaviour {
 	public void QuitCurrentGame(int x){
 		if(x==PlayerPause){
 			Time.timeScale = 1.0f;
-			Destroy(GameObject.Find("GameSettingsManager"));
+			GameObject manager = GameObject.Find("GameSettingsManager");
+			Destroy(manager);
 			Application.LoadLevel("LMGameCreation");
 		}
 		return;

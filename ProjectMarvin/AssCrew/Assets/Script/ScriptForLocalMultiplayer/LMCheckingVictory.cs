@@ -13,7 +13,7 @@ public class LMCheckingVictory : MonoBehaviour {
 		gameSettings = GameObject.Find("GameSettingsManager").GetComponent<LMGameSettings>();
 		Dead = new bool[gameSettings.GetPlayers()];
 		text = GameObject.Find("VictoryGUI").GetComponent<LMGUIVictory>();
-		gameSettings.RoundOver();
+		//gameSettings.RoundOver();
 		first = true;
 	}
 
@@ -38,16 +38,16 @@ public class LMCheckingVictory : MonoBehaviour {
 	void Update () {
 	}
 
-	public void KillMe(int i){
+	public void KillMe(int i,int x){
 		Dead[i] = true;
 		text.KilledPlayer(i);
-		CheckVictoryCondition();
+		CheckVictoryCondition(x);
 	}
 
 	public int WinnerIs(){
 		int one, two, three, four;
 		one = two = three = four = 0;
-		for(int i = 0 ; i<gameSettings.RoundWinner.Length;i++){
+		for(int i = 0 ; i<gameSettings.RoundWinner.Count;i++){
 			int temp = gameSettings.GetRoundWinner(i);
 			switch(temp){
 			case 1: one++; break;
@@ -75,30 +75,89 @@ public class LMCheckingVictory : MonoBehaviour {
 	}
 
 
-	public void CheckVictoryCondition(){
+	public void CheckVictoryCondition(int x){
 		int Alive = 0;
-		for(int i = 0;i<Dead.Length;i++)
-			if(!Dead[i])
-				Alive++;
-		if(Alive==1){
+		switch(gameSettings.GetGameMode()){
+		case 0:	
+			Alive = 0;
 			for(int i = 0;i<Dead.Length;i++){
-				if(!Dead[i]){
-					if(gameSettings.RoundToEnd>1){
-						text.ShowText(i+1);
-						gameSettings.SetRoundWinner(gameSettings.Round-gameSettings.RoundToEnd,i+1);
-						//print ("Inserito in: "+(gameSettings.Round-gameSettings.RoundToEnd)+" Il valore: "+(i+1));
-						StartCoroutine(LoadLobbyAgain());
-						return;
+				if(!Dead[i])
+					Alive++;
+			}
+			if(Alive==1){
+				for(int i = 0;i<Dead.Length;i++){
+					if(!Dead[i]){
+							gameSettings.SetRoundWinner(gameSettings.Round-gameSettings.RoundToEnd,i+1);
 					}
-					else{
-						text.ShowTextRound(WinnerIs());
-						gameSettings.SetRoundWinner(gameSettings.Round-gameSettings.RoundToEnd,i+1);
-						//print ("Inserito in: "+(gameSettings.Round-gameSettings.RoundToEnd)+" Il valore: "+(i+1));
-						StartCoroutine(LoadMenuAgain());
-						return;
+				}
+				int one, two, three, four;
+				one = two = three = four = 0;
+				for(int i = 0 ; i<gameSettings.RoundWinner.Count;i++){
+					int temp = gameSettings.GetRoundWinner(i);
+					switch(temp){
+						case 1: one++; break;
+						case 2: two++; break;
+						case 3: three++; break;
+						case 4: four++; break;
+						default: break;
+					}
+				}
+				int Most =Mathf.Max(Mathf.Max(Mathf.Max(one, two), three),four);
+				for(int i = 0;i<Dead.Length;i++){
+					if(!Dead[i]){
+						if(Most<gameSettings.Round){
+							text.ShowText(i+1);
+							StartCoroutine(LoadLobbyAgain());
+							return;
+						}
+						else{
+							text.ShowTextRound(WinnerIs());
+							StartCoroutine(LoadMenuAgain());
+							return;
+						}
 					}
 				}
 			}
+			return;
+		case 1:
+			Alive = 0;
+			for(int i = 0;i<Dead.Length;i++){
+				if(!Dead[i])
+					Alive++;
+			}
+			if(Alive==gameSettings.GetPlayers()-1){
+				gameSettings.SetRoundWinner(gameSettings.Round-gameSettings.RoundToEnd,x+1);
+				int one, two, three, four;
+				one = two = three = four = 0;
+				for(int i = 0 ; i<gameSettings.RoundWinner.Count;i++){
+					int temp = gameSettings.GetRoundWinner(i);
+					switch(temp){
+					case 1: one++; break;
+					case 2: two++; break;
+					case 3: three++; break;
+					case 4: four++; break;
+					default: break;
+					}
+				}
+				int Most =Mathf.Max(Mathf.Max(Mathf.Max(one, two), three),four);
+				for(int i = 0;i<Dead.Length;i++){
+					if(!Dead[i]){
+						if(Most<gameSettings.Round){
+							text.ShowText(i+1);
+							StartCoroutine(LoadLobbyAgain());
+							return;
+						}
+						else{
+							text.ShowTextRound(WinnerIs());
+							StartCoroutine(LoadMenuAgain());
+							return;
+						}
+					}
+				}
+			}
+			return;
+		default:
+			return;
 		}
 	}
 

@@ -125,6 +125,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootMapOrder: 3
+--- !u!1 &81672767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 81672769}
+  - 132: {fileID: 81672768}
+  - 114: {fileID: 81672770}
+  m_Layer: 0
+  m_Name: InfoRoundOptions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!132 &81672768
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 81672767}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Text: Yep. Fake text. As always.
+  m_Anchor: 4
+  m_Alignment: 2
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &81672769
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 81672767}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .74000001, y: .829999983, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootMapOrder: 17
+--- !u!114 &81672770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 81672767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4dc01d70ea8494b9dae429d1c85c9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testo:
+  - Number of round.
+  - 
+  - The player with the highest number of rounds won, win the game
+  skin: {fileID: 11400000, guid: 6a5d6ec3bc7ed5a4396113e6a2973e82, type: 2}
+  XStart: 1.64999998
+  YStart: 7.40999985
+  XDim: 3.28999996
+  YDim: 1.99000001
+  fontsize: 50
 --- !u!1 &264079013
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,10 +233,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 20
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4286216826
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &264079015
@@ -206,6 +279,7 @@ MonoBehaviour:
   Scene: 
   scriptText: {fileID: 0}
   Quit: 0
+  sel: 0
 --- !u!1 &437396021
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 964781721}
   scriptText: {fileID: 0}
+  option: {fileID: 1244889442}
   add: 0
 --- !u!132 &437396023
 GUIText:
@@ -254,10 +329,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 20
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4287664272
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &437396024
@@ -353,6 +428,7 @@ GameObject:
   - 132: {fileID: 768679402}
   - 114: {fileID: 768679401}
   - 114: {fileID: 768679404}
+  - 114: {fileID: 768679405}
   m_Layer: 0
   m_Name: Back
   m_TagString: Untagged
@@ -374,6 +450,7 @@ MonoBehaviour:
   Scene: MenuTest
   scriptText: {fileID: 0}
   Quit: 0
+  sel: 0
 --- !u!132 &768679402
 GUIText:
   m_ObjectHideFlags: 0
@@ -391,10 +468,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 19
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4288651167
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &768679403
@@ -421,6 +498,84 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Find: GameSettingsManager
+--- !u!114 &768679405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768679400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e527b7e28c67754a848cf21fb566979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NormalText: Back
+  ControllerText: Press B to go Back
+--- !u!1 &782686019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 782686021}
+  - 132: {fileID: 782686020}
+  - 114: {fileID: 782686022}
+  m_Layer: 0
+  m_Name: InfoOptions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &782686020
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 782686019}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Press F1 for info
+  m_Anchor: 2
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &782686021
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 782686019}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .99000001, y: .959999979, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootMapOrder: 13
+--- !u!114 &782686022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 782686019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e527b7e28c67754a848cf21fb566979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NormalText: Press F1 for info
+  ControllerText: Press Y for info
 --- !u!1 &855596281
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,10 +611,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 20
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4286216826
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &855596283
@@ -503,6 +658,7 @@ MonoBehaviour:
   Scene: 
   scriptText: {fileID: 0}
   Quit: 0
+  sel: 0
 --- !u!1 &964781720
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +736,7 @@ MonoBehaviour:
   Scene: LMLobby
   scriptText: {fileID: 0}
   Quit: 0
+  sel: 0
 --- !u!132 &1016686219
 GUIText:
   m_ObjectHideFlags: 0
@@ -597,10 +754,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 19
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4288651167
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1016686220
@@ -699,6 +856,82 @@ Transform:
   - {fileID: 1382733053}
   m_Father: {fileID: 0}
   m_RootMapOrder: 4
+--- !u!1 &1205845081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1205845083}
+  - 132: {fileID: 1205845082}
+  - 114: {fileID: 1205845084}
+  m_Layer: 0
+  m_Name: InfoPlayerOptions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!132 &1205845082
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205845081}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Text: I am also a fake information. Sorry
+  m_Anchor: 4
+  m_Alignment: 2
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &1205845083
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205845081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .74000001, y: .829999983, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootMapOrder: 16
+--- !u!114 &1205845084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205845081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4dc01d70ea8494b9dae429d1c85c9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testo:
+  - Number of players in game
+  - 
+  - The max number of player is influenced by the number of controller plugged in.
+  - If there are less than 3 controller plugged in, as default there are only 2 players.
+  - Max = 4
+  - Min = 2
+  skin: {fileID: 11400000, guid: 6a5d6ec3bc7ed5a4396113e6a2973e82, type: 2}
+  XStart: 1.64999998
+  YStart: 7.40999985
+  XDim: 3.28999996
+  YDim: 1.99000001
+  fontsize: 50
 --- !u!1 &1244889438
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,7 +958,7 @@ GUIText:
   m_GameObject: {fileID: 1244889438}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: 'Rounds : 3'
+  m_Text: 'First to : 4'
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
@@ -734,10 +967,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 20
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4286216826
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1244889440
@@ -780,6 +1013,7 @@ MonoBehaviour:
   Scene: 
   scriptText: {fileID: 0}
   Quit: 0
+  sel: 0
 --- !u!1 &1340219014
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,10 +1048,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 20
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4288716958
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1340219016
@@ -844,6 +1078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script: {fileID: 1353296576}
+  option: {fileID: 855596285}
   remove: 0
 --- !u!1 &1353296575
 GameObject:
@@ -918,6 +1153,7 @@ MonoBehaviour:
   settings: {fileID: 964781721}
   value: 1
   scriptText: {fileID: 0}
+  option: {fileID: 1393774318}
 --- !u!132 &1382733052
 GUIText:
   m_ObjectHideFlags: 0
@@ -935,10 +1171,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 20
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4287664272
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1382733053
@@ -988,10 +1224,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 20
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4286216826
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1393774316
@@ -1035,6 +1271,7 @@ MonoBehaviour:
   Scene: 
   scriptText: {fileID: 0}
   Quit: 0
+  sel: 0
 --- !u!1 &1500630903
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 964781721}
   scriptText: {fileID: 0}
+  option: {fileID: 1244889442}
   add: 1
 --- !u!132 &1500630905
 GUIText:
@@ -1083,10 +1321,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 20
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4287664272
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1500630906
@@ -1135,10 +1373,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 20
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4288716958
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1535015109
@@ -1165,6 +1403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script: {fileID: 1353296576}
+  option: {fileID: 855596285}
   remove: 1
 --- !u!1 &1618467696
 GameObject:
@@ -1196,6 +1435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 964781721}
   scriptText: {fileID: 0}
+  option: {fileID: 264079017}
   add: 0
 --- !u!132 &1618467698
 GUIText:
@@ -1214,10 +1454,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 20
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4288190616
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1618467699
@@ -1232,6 +1472,133 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1197353396}
   m_RootMapOrder: 4
+--- !u!1 &1708039571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1708039573}
+  - 132: {fileID: 1708039572}
+  - 114: {fileID: 1708039574}
+  m_Layer: 0
+  m_Name: InfoTeamOptions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!132 &1708039572
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1708039571}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Text: This is a test, I am not a real text. Sorry.
+  m_Anchor: 4
+  m_Alignment: 2
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &1708039573
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1708039571}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .74000001, y: .829999983, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootMapOrder: 14
+--- !u!114 &1708039574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1708039571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4dc01d70ea8494b9dae429d1c85c9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testo:
+  - Set team mode.
+  - 
+  - Team mode is a special game mode.
+  - At each player will be assigned a different color.
+  - The crowd will be divided by color as well.
+  - 
+  - This game mode is easier than the normal mode.
+  skin: {fileID: 11400000, guid: 6a5d6ec3bc7ed5a4396113e6a2973e82, type: 2}
+  XStart: 1.64999998
+  YStart: 7.40999985
+  XDim: 3.28999996
+  YDim: 1.99000001
+  fontsize: 50
+--- !u!1 &1881433200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1881433202}
+  - 114: {fileID: 1881433201}
+  m_Layer: 0
+  m_Name: HelperController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1881433201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881433200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c73bc581f17b0246998dbc94d058a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  option:
+  - {fileID: 1393774318}
+  - {fileID: 264079017}
+  - {fileID: 1244889442}
+  - {fileID: 855596285}
+  helpText:
+  - {fileID: 1708039571}
+  - {fileID: 1205845081}
+  - {fileID: 81672767}
+  - {fileID: 2067415325}
+  On: 0
+--- !u!4 &1881433202
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881433200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.15216398, y: 2.16260958, z: -4.80664062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootMapOrder: 15
 --- !u!1 &1932895328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,6 +1630,7 @@ MonoBehaviour:
   settings: {fileID: 964781721}
   value: 0
   scriptText: {fileID: 0}
+  option: {fileID: 1393774318}
 --- !u!132 &1932895330
 GUIText:
   m_ObjectHideFlags: 0
@@ -1280,10 +1648,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 20
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4287664272
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1932895331
@@ -1298,6 +1666,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1197353396}
   m_RootMapOrder: 6
+--- !u!1 &2067415325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2067415327}
+  - 132: {fileID: 2067415326}
+  - 114: {fileID: 2067415328}
+  m_Layer: 0
+  m_Name: InfoPeopleOptions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!132 &2067415326
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067415325}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Text: Guess what?
+  m_Anchor: 4
+  m_Alignment: 2
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &2067415327
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067415325}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .74000001, y: .829999983, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootMapOrder: 18
+--- !u!114 &2067415328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067415325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4dc01d70ea8494b9dae429d1c85c9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testo:
+  - Number of NPCs in game.
+  - 
+  - The NPCs can wave and run as well as a player. But they can NOT kill other NPCs!
+  skin: {fileID: 11400000, guid: 6a5d6ec3bc7ed5a4396113e6a2973e82, type: 2}
+  XStart: 1.64999998
+  YStart: 7.40999985
+  XDim: 3.28999996
+  YDim: 1.99000001
+  fontsize: 50
 --- !u!1 &2073892677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,6 +1853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 964781721}
   scriptText: {fileID: 0}
+  option: {fileID: 264079017}
   add: 1
 --- !u!132 &2083929565
 GUIText:
@@ -1430,10 +1872,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 20
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4288190616
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &2083929566

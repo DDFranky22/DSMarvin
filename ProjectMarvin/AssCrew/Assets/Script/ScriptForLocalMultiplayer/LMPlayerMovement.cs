@@ -162,7 +162,7 @@ public class LMPlayerMovement : MonoBehaviour {
 			}
 			break;
 		case 1: 
-			if(Input.GetKeyDown(KeyCode.Escape)||Input.GetKeyDown(KeyCode.Joystick2Button1)){
+			if(Input.GetKeyDown(KeyCode.Escape)||Input.GetKeyDown(KeyCode.Joystick2Button7)){
 				PressedPause = !PressedPause;
 				if(!Pause){
 					PauseGame(Number);
@@ -301,8 +301,8 @@ public class LMPlayerMovement : MonoBehaviour {
 		if(Hitted.tag=="Terreno")
 			return;
 		LMPlayerMovement scriptHitted = Hitted.GetComponent<LMPlayerMovement>();
-		if(scriptHitted!=null&&Attacked){
-			scriptHitted.check.KillMe(scriptHitted.Number);
+		if(scriptHitted!=null&&Attacked&&scriptHitted.alive){
+			scriptHitted.check.KillMe(scriptHitted.Number,Number);
 			scriptHitted.Die();
 		}
 		else if(scriptHitted==null&&Attacked){

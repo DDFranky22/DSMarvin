@@ -20,8 +20,8 @@ public class LMCreatePlayerInLobby : MonoBehaviour {
 		for(int i = 0;i<NumberOfPlayers;i++){
 			GameObject temp = Instantiate(PlayerPrefab,new Vector3(Random.Range(-9,9),0,Random.Range(-8,8)),Quaternion.identity) as GameObject;
 			LMPlayerMovementLobby script = temp.GetComponent<LMPlayerMovementLobby>();
-			GameObject Test = temp.transform.FindChild("Test02").gameObject;
-			GameObject Omino = Test.transform.FindChild("omino3").gameObject;
+			GameObject Test = temp.transform.FindChild("casamaryominodue").gameObject;
+			GameObject Omino = Test.transform.FindChild("omino5").gameObject;
 			Omino.renderer.material = materiali[i];
 			script.Number = i;
 		}

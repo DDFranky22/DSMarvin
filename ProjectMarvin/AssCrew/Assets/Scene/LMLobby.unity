@@ -527,6 +527,7 @@ GameObject:
   - 132: {fileID: 1503591041}
   - 114: {fileID: 1503591040}
   - 114: {fileID: 1503591039}
+  - 114: {fileID: 1503591043}
   m_Layer: 0
   m_Name: Back
   m_TagString: Untagged
@@ -540,7 +541,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1503591038}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae4a5be78f4bab14698138c3248d64e6, type: 3}
   m_Name: 
@@ -552,7 +553,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1503591038}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6d9a203334006c45b978e30670d464d, type: 3}
   m_Name: 
@@ -560,13 +561,14 @@ MonoBehaviour:
   Scene: LMGameCreation
   scriptText: {fileID: 0}
   Quit: 0
+  sel: 0
 --- !u!132 &1503591041
 GUIText:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1503591038}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Back
   m_Anchor: 0
@@ -577,10 +579,10 @@ GUIText:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
   m_FontSize: 19
-  m_FontStyle: 0
+  m_FontStyle: 2
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4287532681
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1503591042
@@ -595,6 +597,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootMapOrder: 0
+--- !u!114 &1503591043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1503591038}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e527b7e28c67754a848cf21fb566979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NormalText: Back
+  ControllerText: B for back
 --- !u!1 &1613477500
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,6 +659,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1689436292}
   - 132: {fileID: 1689436291}
+  - 114: {fileID: 1689436293}
   m_Layer: 0
   m_Name: PressToBeReady
   m_TagString: Untagged
@@ -686,6 +702,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootMapOrder: 11
+--- !u!114 &1689436293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1689436290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e527b7e28c67754a848cf21fb566979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NormalText: Press Attack to be Ready
+  ControllerText: Press X to be Ready
 --- !u!1 &1938335283
 GameObject:
   m_ObjectHideFlags: 0

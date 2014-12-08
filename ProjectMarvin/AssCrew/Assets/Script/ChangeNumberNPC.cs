@@ -4,6 +4,7 @@ using System.Collections;
 public class ChangeNumberNPC : MonoBehaviour {
 
 	public HandleNPCSettings script;
+	public ClickOnButton option;
 	private GUIText	scriptText;
 
 	public bool remove;
@@ -11,6 +12,7 @@ public class ChangeNumberNPC : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		scriptText = GetComponent<GUIText> ();
+
 	}
 	
 	// Update is called once per frame
@@ -19,13 +21,13 @@ public class ChangeNumberNPC : MonoBehaviour {
 	}
 
 	public void Selected(){
-		scriptText.color = Color.grey;
-		scriptText.fontStyle = FontStyle.Italic;
+		scriptText.color = Color.black;
+		scriptText.fontStyle = FontStyle.Normal;
 	}
 	
 	public void Deselected(){
-		scriptText.color = Color.black;
-		scriptText.fontStyle = FontStyle.Normal;
+		scriptText.color = Color.grey;
+		scriptText.fontStyle = FontStyle.Italic;
 	}
 	
 	public void Chose(){
@@ -38,10 +40,12 @@ public class ChangeNumberNPC : MonoBehaviour {
 	
 	void OnMouseOver(){
 		Selected();
+		option.Selected();
 	}
 	
 	void OnMouseExit(){
 		Deselected();
+		option.Deselect();
 	}
 	
 	void OnMouseDown(){
